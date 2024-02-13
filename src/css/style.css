@@ -1,0 +1,84 @@
+.form-group{
+    display: flex;
+}
+
+.form-items {
+    /* Adjust width and height as needed */
+    width: auto;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for input fields, one for button */
+    grid-template-rows: auto auto; /* Two rows for content */
+    grid-gap: 1rem; /* Add some spacing between form elements */
+    border: 10px solid black;
+    justify-content: flex-end; /* Align content right */
+    align-items: center;
+  }
+  
+  .form-group:nth-child(1) {
+    grid-row: 1; /* Place first group in first row */
+  }
+  
+  .form-group:nth-child(2) {
+    grid-row: 1; /* Place second group in first row */
+  }
+  
+  .form-group:nth-child(3) {
+    grid-row: 1; /* Place third group in second row */
+  }
+  
+  .form-group {
+    display: flex; /* Arrange labels and inputs horizontally */
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: flex-start; /* Align label and input to the left */
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;/* Add some space between label and input */
+  }
+  
+  /* Stack category dropdowns */
+  .form-group:nth-child(2) select {
+    margin-bottom: 0.5rem; /* Space between dropdowns */
+  }
+  
+  .form-group input {
+    /* Use same properties as other input fields, e.g.: */
+    width: 10rem;
+    height: 1.25rem; /* Adjust height as needed */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin-left: 1.5rem;
+
+  }
+
+  /* Match dropdown size to other input fields */
+  .form-group select {
+    /* Use same properties as other input fields, e.g.: */
+    width: 11.1rem;
+    height: 2.25rem; /* Adjust height as needed */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin-left: 1.5rem;
+  }
+  
+  /* Adjust date picker styling (optional) */
+  .date-picker {
+    /* Add custom styles here, if needed */
+  }
+  
+  /* Style submit button and position it */
+  button[type="submit"] {
+    background-color: #f65026; /* Adjust color */
+    color: white;
+    border: none;
+    width: 13rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    align-self: center;
+    position: absolute;
+    right: 1.5rem;
+    top: 7rem;
+  }
+  
